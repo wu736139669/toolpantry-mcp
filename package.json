@@ -1,0 +1,14 @@
+{
+  "name": "toolpantry-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Tool Pantry — 216 free browser tools for PDF, images, video, audio and text that process files locally.",
+  "type": "module",
+  "bin": { "toolpantry-mcp": "./mcp-server.mjs" },
+  "main": "mcp-server.mjs",
+  "files": ["mcp-server.mjs", "README.md", "LICENSE"],
+  "keywords": ["mcp", "model-context-protocol", "tools", "pdf", "images", "local-processing", "privacy"],
+  "homepage": "https://toolpantry.app",
+  "repository": { "type": "git", "url": "git+https://github.com/wu736139669/toolpantry-mcp.git" },
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}
