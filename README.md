@@ -9,6 +9,18 @@ The server has two jobs:
 
 Zero dependencies, ~200 lines, runs on any Node 18+.
 
+## Use it over HTTP
+
+The same server runs on Cloudflare Workers at **`https://mcp.toolpantry.app/mcp`** (streamable HTTP, stateless):
+
+```bash
+curl -X POST https://mcp.toolpantry.app/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```
+
+`https://mcp.toolpantry.app/` returns a small health/capability JSON.
+
 ## Install
 
 ```bash
@@ -47,6 +59,8 @@ node toolpantry-mcp/mcp-server.mjs
 | `base64` | Encode or decode UTF-8 text |
 | `color_convert` | Hex colour to RGB and HSL |
 | `qr_code` | QR code as SVG for any text or URL |
+
+## Install
 
 Every tool is a thin wrapper over the public, key-free API at `https://toolpantry.app/api` — the same endpoints are documented in the [API reference](https://toolpantry.app/api). Point the server somewhere else with `TOOLPANTRY_API=https://toolpantry.app/api`.
 

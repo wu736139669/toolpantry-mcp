@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "toolpantry-mcp",
+  "main": "worker/mcp-worker.mjs",
+  "compatibility_date": "2026-10-01",
+  "routes": [
+    { "pattern": "mcp.toolpantry.app", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
