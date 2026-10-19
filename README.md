@@ -9,6 +9,16 @@ The server has two jobs:
 
 Zero dependencies, ~200 lines, runs on any Node 18+.
 
+## Listed in the official MCP registry
+
+```
+io.github.wu736139669/toolpantry-mcp
+```
+
+```bash
+curl "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.wu736139669/toolpantry-mcp"
+```
+
 ## Use it over HTTP
 
 The same server runs on Cloudflare Workers at **`https://mcp.toolpantry.app/mcp`** (streamable HTTP, stateless):

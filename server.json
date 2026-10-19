@@ -1,33 +1,14 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.wu736139669/toolpantry-mcp",
-  "description": "Search and use Tool Pantry — 216 free browser tools for PDF, images, video, audio and text that process files entirely in the user's browser. Also available over HTTP at https://mcp.toolpantry.app/mcp.",
+  "title": "Tool Pantry",
+  "description": "Find and use 216 free browser tools for PDF, images, video, audio and text that run locally.",
   "version": "1.1.0",
   "websiteUrl": "https://toolpantry.app",
   "repository": {
     "url": "https://github.com/wu736139669/toolpantry-mcp",
     "source": "github"
   },
-  "packages": [
-    {
-      "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "toolpantry-mcp",
-      "version": "1.1.0",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "TOOLPANTRY_API",
-          "description": "Base URL of the Tool Pantry API (default https://toolpantry.app/api)",
-          "isRequired": false,
-          "isSecret": false,
-          "default": "https://toolpantry.app/api"
-        }
-      ]
-    }
-  ],
   "remotes": [
     {
       "type": "streamable-http",
